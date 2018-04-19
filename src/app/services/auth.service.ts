@@ -12,13 +12,13 @@ export class AuthService {
     this.afAuith.auth.signInWithEmailAndPassword(mail, password)
       .then(user => { console.log(user); })
       .catch(err => { console.log(err); });
-      this.router.navigateByUrl('/home');
+    this.router.navigateByUrl('/home');
   }
   signup(mail: string, password: string) {
     this.afAuith.auth.createUserWithEmailAndPassword(mail, password)
       .then(user => { console.log(user); })
       .catch(err => { console.log(err); });
-      this.router.navigateByUrl('/home');
+    this.router.navigateByUrl('/home');
   }
   logout() {
     this.afAuith.auth.signOut();

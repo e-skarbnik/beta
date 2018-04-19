@@ -12,6 +12,7 @@ import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app.routing.module';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { AuthService } from './services/auth.service';
+import { UserscrudService } from './services/usercrud.service';
 import { FormsModule } from '@angular/forms';
 
 
