@@ -1,3 +1,20 @@
-<p>
-  users-add works!
-</p>
+<form #userForm="ngForm" (ngSubmit)="onSubmit(userForm)">
+  <div class="form-group">
+    <label>Name</label>
+    <input class="form-control" name="name" #name="ngModel" [(ngModel)]="userService.user.name" placeholder="Name">
+  </div>
+  <div class="form-group">
+    <label>Surname</label>
+    <input class="form-control" name="surname" #surname="ngModel" [(ngModel)]="userService.user.surname" placeholder="Surname">
+  </div>
+  <div class="form-group">
+    <label>Email</label>
+    <input class="form-control" name="email" #email="ngModel" [(ngModel)]="userService.user.email" placeholder="Email">
+  </div>
+  <div class="form-grup">
+    <button type="submit" class="btn btn-default">Dodaj</button>
+    <button type="button" class="btn btn-default">Usuń</button>
+    <button type="button" class="btn btn-default">Reset</button>
+  </div>
+
+</form>
